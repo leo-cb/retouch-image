@@ -1,3 +1,5 @@
 requests
 pillow
 tkinterdnd2
+numpy
+opencv-python

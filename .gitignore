@@ -1,2 +1,5 @@
-.venv/
+.venv*/
 __pycache__/
+output/
+log.log
+.getimg_key
