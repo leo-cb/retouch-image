@@ -1,5 +1,5 @@
-requests
-pillow
-tkinterdnd2
-numpy
-opencv-python
+requests>2.32,<2.40
+pillow>=11.1.0,<11.2
+tkinterdnd2>0.4.0,<0.5
+numpy>2.2.0,<2.3
+opencv-python>4.11.0.0,<4.12
