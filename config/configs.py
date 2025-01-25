@@ -6,7 +6,6 @@ IMG2IMG_MODEL = {
     "class": "RetouchGetImg",
     "api_key": "setup_getimg",  # function to setup the API key
     "model_args": {
-        "adapter": "content",
         "model": "juggernaut-xl-v10",
         "steps": 100,
     },  # API model arguments

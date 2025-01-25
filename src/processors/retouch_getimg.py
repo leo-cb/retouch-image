@@ -48,6 +48,9 @@ class RetouchGetImg(ImageProcessorBase):
             image_base64=image_base64,
             output_file=None,  # We'll handle saving separately
             model_family="stable-diffusion-xl",
+            adapter=self.adapter_var.get(),
+            strength=self.strength_var.get(),
+            guidance=self.guidance_var.get(),
             **self.kwargs
         )
         

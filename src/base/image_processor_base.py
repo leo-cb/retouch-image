@@ -32,6 +32,31 @@ class ImageProcessorBase:
 
         self.image = None  # To store the loaded image
 
+        # Adapter dropdown
+        self.adapter_label = tk.Label(root, text="Adapter:")
+        self.adapter_label.pack()
+        self.adapter_var = tk.StringVar(value="content")
+        self.adapter_dropdown = tk.OptionMenu(root, self.adapter_var, "content", "style", "face")
+        self.adapter_dropdown.pack()
+
+        # Strength slider
+        self.strength_label = tk.Label(root, text="Strength (0.01-2.0):")
+        self.strength_label.pack()
+        self.strength_var = tk.DoubleVar(value=0.6)
+        self.strength_slider = tk.Scale(root, from_=0.01, to=2.0, resolution=0.01, 
+                                        orient=tk.HORIZONTAL, length=200, 
+                                        variable=self.strength_var)
+        self.strength_slider.pack()
+
+        # Guidance slider
+        self.guidance_label = tk.Label(root, text="Guidance (0-20):")
+        self.guidance_label.pack()
+        self.guidance_var = tk.DoubleVar(value=7.5)
+        self.guidance_slider = tk.Scale(root, from_=0, to=20, resolution=0.1, 
+                                        orient=tk.HORIZONTAL, length=200, 
+                                        variable=self.guidance_var)
+        self.guidance_slider.pack()
+
     def on_drop(self, event):
         file_path = event.data.strip('{}')  # Clean up the file path
         if file_path:
