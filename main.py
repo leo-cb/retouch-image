@@ -5,8 +5,6 @@ from tkinterdnd2 import TkinterDnD
 import config.configs as cfg
 from logger import logger
 
-# TODO: implement model parameters as drop-down menus and sliders
-
 # TODO: this goes to class
 def setup_getimg():
     """Set up GetImg API key"""
