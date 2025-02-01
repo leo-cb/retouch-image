@@ -41,7 +41,9 @@ class ImageProcessorBase:
 
         # Strength slider
         self.strength_label = tk.Label(root, text="Strength (0.01-2.0):")
+        self.strength_desc_label = tk.Label(root, text="Higher the number, the more closely it will resemble the prompt image.")
         self.strength_label.pack()
+        self.strength_desc_label.pack()
         self.strength_var = tk.DoubleVar(value=0.6)
         self.strength_slider = tk.Scale(root, from_=0.01, to=2.0, resolution=0.01, 
                                         orient=tk.HORIZONTAL, length=200, 
@@ -50,7 +52,9 @@ class ImageProcessorBase:
 
         # Guidance slider
         self.guidance_label = tk.Label(root, text="Guidance (0-20):")
+        self.guidance_desc_label = tk.Label(root, text="Higher the number, the more closely text prompt will be followed.")
         self.guidance_label.pack()
+        self.guidance_desc_label.pack()
         self.guidance_var = tk.DoubleVar(value=7.5)
         self.guidance_slider = tk.Scale(root, from_=0, to=20, resolution=0.1, 
                                         orient=tk.HORIZONTAL, length=200, 
