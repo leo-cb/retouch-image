@@ -10,7 +10,7 @@ Retouches an image following the given instructions, using a getimg.ai model.
    ```shell
    git clone https://github.com/leo-cb/retouch-image.git
    ```
-2. Using Python 3.12, install requirements:
+2. Install requirements:
     ```shell
     pip install -r requirements.txt
     ```
@@ -18,7 +18,7 @@ Retouches an image following the given instructions, using a getimg.ai model.
 
 ## Usage
 
-1. Run main.py for the program to execute the GUI:
+1. Run main.py with Python 3.12 for the program to execute the GUI:
 ```shell
 python main.py
 ```
