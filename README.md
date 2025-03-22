@@ -1,6 +1,6 @@
 # retouch-image
 
-Retouches an image following the given instructions, using a getimg.ai model.
+Retouches an image following the given instructions, using an image-to-image model.
 
 <img src="images/gui.png" alt="GUI" height="440">
 
